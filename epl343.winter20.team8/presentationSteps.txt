@@ -1,0 +1,66 @@
+// LINK
+https://global.gotomeeting.com/join/276861413
+ 
+//--------------------------------------------------------
+Kchris12
+
+00. Quick Intro
+
+01. Fail User Sign in    
+02. Correct User Sign in (kchris12)(1234)
+03. Create Ticket (user has no tickets -> T1)
+    1. Clear Ticket
+    
+//---------------------------    
+
+pchris
+   
+04. View FAQs
+    1. Expand a few FAQs
+05. View Policies (COVID related!)
+06. View my Tickets (view ticket T1)
+07. Modify Ticket (T1)
+
+//------------------------------------
+
+sherod01
+
+08. Sign up         (User U1) (uname: andreas5 fname:andreas lname:andreou)
+09. Log in as Admin (admin OR ahadji08 OR sherod01)
+10. Approve Signed up (User U1)
+11. Remove a User
+
+
+//----------------------------------------
+
+alouka
+
+12. Edit the ticket (T1 by kchris12)
+13. Handle ticket   (T1)
+14. User status
+    1. Show pass                (NOT FROM team08)
+    2. give admin capabilities  (FROM team08)
+    3. Fire User                (FROM team08 NOT ahadji08 & sherod01)
+    
+//---------------------------------------
+    
+ccosti    
+15. View Policies
+    1. Edit Policies
+16. View FAQs
+	1. Add FAQ
+	2. EDIT FAQ
+	3. REMOVE FAQ
+
+
+//--------------------------------------
+
+ahadji08
+
+17. Create Report
+	1. SHOW EXCEL REPORT
+18. login as the user U1 that was registered
+19. show the new policies 
+20. show the new faq
+
+
