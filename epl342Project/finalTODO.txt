@@ -1,0 +1,82 @@
+User
+    uid
+    name
+    birthday
+    email
+    website
+    currentWork (!)
+    username
+    password
+    hometown
+    location
+    numFriends
+    profPic
+    friendListPricavy     
+Photo
+    pid
+    fromid (user)
+    name
+    source  -> resources:/photo.bmp (check)
+    height
+    width
+    link    -> resources:/photo.bmp (check)
+    albumID
+    numOfLikes
+    privacy
+Album
+    aid
+    fromid
+    name
+    description
+    location
+    link
+    privacy
+    count
+    ----
+    Comments
+    Photos (list of Strings)
+Videos
+    vid 
+    fromid
+    name 
+    message
+    link
+    lenghth
+    description
+    privacy
+    -----
+    Comment
+Event
+    eid
+    owner
+    name
+    description
+    start_time
+	finish_time
+    location
+    venue
+    privacy
+    ----
+    numOfParticipants (needs Trigger)
+Link
+    lid
+    fromid
+    link
+    name
+    caption
+    description
+    message
+    privacy
+Updates (will be viewed as a string in a popup)
+    updateid
+    upType      (that's the message)
+    upClass     (photos, albums, links, events, video)
+    userid
+    date
+dummy data
+    Ως έχει
+    Σχέση
+import
+report
+ER
+Schema

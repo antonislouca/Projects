@@ -1,0 +1,104 @@
+INTEREST_ID	DESCRIPTION
+1	Aikido
+2	Antiques
+3	Art Collecting / Collectibles
+4	Arts and Crafts
+5	Astrology
+6	Beadwork / Beading
+7	Ballet Dancing
+8	Ballroom Dancing
+9	Belly Dancing
+10	Bird Watching
+11	Breakdancing
+12	Body Art / Tattoos
+13	Body Piercing
+14	Cake Decorating
+15	Camping
+16	Candle Making
+17	Coin Collecting
+18	Coloring Pages
+19	Computer Games
+20	Cooking
+21	Craft Books
+22	Crochet
+23	Cruising
+24	Dancing
+25	Dog Training
+26	Diving / Snorkeling
+27	Drawing / Sketching
+28	Embroidery
+29	Fishing
+30	Flamenco
+31	Floral Arrangements
+32	Gardening
+33	Genealogy
+34	Graffiti Art
+35	Graphology / Handwriting Analysis
+36	Handmade / Handcrafted Jewelry
+37	Handicrafts
+38	Hiking
+39	Hip Hop Dancing
+40	Horse Riding
+41	Hunting
+42	Ice Skating
+43	Irish Dancing
+44	Italian Art
+45	Jewelry Making
+46	Judo
+47	Kayaking
+48	Kickboxing
+49	Kitesurfing / Kiteboarding
+50	Kids' Art
+51	Kids' Crafts
+52	Knitting
+53	Kung Fu
+54	Latin Dances
+55	Leather Craft
+56	Line Dancing
+57	Martial Arts
+58	Magic and Optical Illusions
+59	Music
+60	Acrylic Paintings
+61	Face Painting
+62	Oil Painting
+63	Paper Crafts
+64	Paragliding
+65	Pet Adoption
+66	Photography
+67	Physical Exercises and Fitness Activities
+68	Quilting
+69	Radios
+70	Reading
+71	Riddles
+72	Sand Sculpting and Sand Crafts
+73	Sculpting
+74	Sewing
+75	Singing Lessons
+76	Space Exploration
+77	Stamp Collecting
+78	Sudoku Puzzles
+79	River / Whitewater Rafting
+80	Rock and Mountain Climbing
+81	Sailing and Boating
+82	Salsa Dancing
+83	Scale Modeling
+84	Scrapbooking
+85	Scuba Diving
+86	Skateboarding
+87	Skydiving / Parachuting
+88	Snow Skiing
+89	Snowboarding
+90	Speed Skating
+91	Stained Glass
+92	Star Astronomy
+93	Sumo Wrestling
+94	Surfing
+95	Swimming
+96	Tango Dance
+97	Treasure Hunting
+98	Trekking
+99	Vacations / Traveling
+100	Watercolor Paintings
+101	Wood Carving
+102	Woodworking
+103	Writing

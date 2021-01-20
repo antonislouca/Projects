@@ -1,0 +1,118 @@
+--------------------------------------------------------------------------------
+-- TODO: HERE WE CAN PUT EVERYTHING THAT IS NOT YET DONE ON THE GROUP PROJECT
+--------------------------------------------------------------------------------
+[X] IN photos source and link is the same shit shall we delete one of them? 
+
+[.] comments on videos now have a no action fk constraint 
+
+[.] Aporia ti simvenei an exoume allagi album mias fotografias? metra san upadte?
+    prepei na exoume trigger gia touto?
+    K> Are we going to implement such a thing?
+	A> i dont know maybe im overthinking it
+
+[R] Shall i create the types table, i will change the character to int for 
+	faster comparison.
+    K> ok
+	A> no type table created 
+
+[.] Someone please check the triggers i made nomizo ekama kapoies aprosexies 
+	alla en exo clarity na katalavo an diorthono i xalo pramata Thanks.
+    K> The file consists of 466 lines of code. In there, there are 20 triggers.
+      Do you want someone to go through these 20 triggers one by one and check
+      with dummy data if the trigger works as it should?
+     
+
+[.] WE HAVE TO FIND A WAY TO RESET THE AUTOINCREMENT WHEN WE DELETE 
+    FROM DATABASE
+    K> Why? 
+
+[.] DO WE NEED TO IMPLEMENT DELETION, INSERTION,UPDATE FROM GUI
+    THIS WOULD MEAN THAT WE HAVE TO MAKE SPROCS FROR EACH ONE.
+    K> No we don't 
+
+
+[.] delete of a user, add a user, modify user attributes.
+    K> Is this needed?
+
+
+    K> I think you've figured that out.
+	
+	
+
+[.] EXPORT DB
+[.] IMPORT DB
+[.] DELETE DB
+
+
+
+.:Legend:.
+[X] Task Complete
+[R] Task Done, needs Review
+[.] Noticed
+[?] Uncertain about Task's state
+P>   Comment by person P
+--------------------------------------------------------------------------------
+TASKS DONE:
+--------------------------------------------------------------------------------
+[X]  Count -1 trigger for Albums
+[X] ProCEDURE THAT RETURNS THE PRIVACY TYPE GIVEN ID
+[X] ProCEDURE that returns privacy id given the name
+[x]procedure the returns loc id given name and procedure that returns name given
+	loc ID
+[X] should do the count -1 trigger on photos table
+    K> I think this has been completed
+--------------------------------------------------------------------------------
+--Antonis tasks:
+--------------------------------------------------------------------------------
+[R]Query E
+[R]Query M
+[R]Query D
+[R]Query J
+[R]Query K
+[R]Query I
+[R]Query C
+[R]Query N
+[R] Are updates correct(fix privacy and location things on triggers then we are
+	done with this)
+
+[R] triggers for update table when album,photos,links,events,videos are 
+    modified. Delete is not modification i belive panchris said that.
+[R] How are upadtes going to be done what do we show to the user as an update
+	(A> ASKED panchris said its ok to show the tuple and delete is not an update
+	this is also done)
+
+
+
+--------------------------------------------------------------------------------
+--Cos tasks:
+--------------------------------------------------------------------------------
+
+[.] Query g: Manage friend requests
+[R] Query k: Update actions (independent of category)
+[.] Query o: Find popular friend(s)
+[R] Query p: Find common friends
+[R] Query q: Find friends with X albums
+[R] Query r: Find users with X albums
+[R] Query s: Find friends with exactly the same intrests
+
+
+--------------------------------------------------------------------------------
+--Hadjis tasks:
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+->PART E3 
+->ER& relational
+->views enixero ti prama alla views done
+->check Db & put it together?
+->finish query? done
+->read jdbc done
+->admin gui part remember done
+->models
+->theloume episeis gia paradotea 
+	-1 file gia sources java code, make file(jar)
+	-1 file gia sql opou tha exoume ta sql arxeia
+	-1 file gia .dat opou prepei na exoume ola ta dedomena tis vasis mas gia kathe 
+		pinaka
+	-1 file doc pou tha einai to report 
+	
+

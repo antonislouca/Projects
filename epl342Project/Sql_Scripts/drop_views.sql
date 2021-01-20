@@ -1,0 +1,5 @@
+DROP VIEW[dbo].[GP_albumUpdates]
+DROP VIEW[dbo].[GP_photosUpdates]
+DROP VIEW[dbo].[GP_videoUpdates]
+DROP VIEW[dbo].[GP_linkUpdates]
+DROP VIEW[dbo].[GP_eventUpdates]

@@ -1,0 +1,708 @@
+CITY_ID	CITY_NAME
+1	Ayia Napa
+2	Aggastina
+3	Ayia Thekla
+4	Ayia Marina
+5	Ayia Triada
+6	Ayios Andronikos
+7	Ayios Andronikos Yialousas
+8	Ayios Georgios Spatharikou
+9	Ayios Georgios Frenarou
+10	Ayios Eystathios
+11	Ayios Ilias
+12	Ayios Theodoros
+13	Ayios Therissos
+14	Ayios Iakovos
+15	Ayios Nikolaos
+16	Ayios Sergios
+17	Ayios Symeon
+18	Ayios Filon
+19	Ayios Xariton
+20	Aiyialousa
+21	Akanthou
+22	Aloda
+23	Ammohostos
+24	Apostolos Andreas
+25	Ardana
+26	Arnadi
+27	Artemi
+28	Askia
+29	Aygolida
+30	Aygorou
+31	Afantia
+32	Axeritou
+33	Axna
+34	Vasili
+35	Vatilli
+36	Vitsada
+37	Vothilakas
+38	Vokolida
+39	Vrysoules
+40	Gaidouras - Nea Sparti
+41	Galateia
+42	Galinoporni
+43	Gastria
+44	Genagra
+45	Gerani
+46	Goufes
+47	Gypsou
+48	Dasaki Axnas
+49	Davlos
+50	Deryneia
+51	Deryneia Kato
+52	Deryneia Pano
+53	Egkomi (Ammohostou)
+54	Eptakomi
+55	Kalopsida
+56	Kantara
+57	Kiados
+58	Knodara
+59	Koilanemos
+60	Kontea
+61	Kornokipos
+62	Korovia
+63	Kouklia (Ammohostou)
+64	Krideia
+65	Komi
+66	Komi tou Gialou
+67	Lapathos
+68	Leonarisso
+69	Leykonoiko
+70	Livadia (Ammohostou)
+71	Limnia
+72	Liopetri
+73	Lythragkomi
+74	Lysi
+75	Makrasyka
+76	Mandres
+77	Maratha
+78	Marathovounos
+79	Melanarga
+80	Melounta
+81	Milia
+82	Monraga
+83	Moni Ayiou Kendea
+84	Moni Apostolou Vanrava
+85	Moni Panayias Eleousas
+86	Mousoulita
+87	Mpogazi
+88	Neta
+89	Ovgoros
+90	Paralimni
+91	Patriki
+92	Perivolia Trikoumou
+93	Peristerona (Ammohostou)
+94	Pigi
+95	Platani
+96	Platanissos
+97	Prastio
+98	Pyrga (Ammohostou)
+99	Rizokarpaso
+100	Salamina
+101	Santalaris
+102	Sinta
+103	Spathariko
+104	Stathmos Koroveias
+105	Strovili
+106	Stroggylos
+107	Styulloi
+108	Sygkrasi
+109	Sotira (Ammohostou)
+110	Tavrou
+111	Trikomo
+112	Trypimeni
+113	Flamoudi
+114	Frenaros
+115	Xelones
+116	Psyllatos
+117	Avdellero
+118	Agglikos Stratos (Larnaka)
+119	Agglisides
+120	Ayia Anna
+121	Ayioi Vavatsinias
+122	Ayios Theodoros
+123	Skarinou
+124	Athienou
+125	Alaminos
+126	Alethriko
+127	Anafotida
+128	Aplanta
+129	Aradippou
+130	Arsos Larnakas
+131	Vavatsinia
+132	Vavla
+133	Vasiliko
+134	Dekeleia
+135	Delikipos
+136	Diethnis Aerolimenas Larnakas
+137	Drapeia
+138	Dromolaksia
+139	Drys Kato
+140	Drys Pano
+141	Zygi
+142	Kalavasos
+143	Kalo Xorio Larnakas
+144	Kato Drys
+145	Kellia
+146	Kibisili
+147	Kiti
+148	Klaydia
+149	Kornos
+150	Kosi
+151	Kofinou
+152	Lageia
+153	Larnaka
+154	Leykara
+155	Leykara Kato
+156	Leykara Pano
+157	Livadia
+158	Mazotos
+159	Mari
+160	Maroni
+161	Melini
+162	Melouseia
+163	Meneou
+164	Menegeia
+165	Moni Ayias Varvaras
+166	Moni Ayias Theklas
+167	Moni Ayioy Mina
+168	Moni Metamorphoseos
+169	Moni Panayias Galaktotrofousas
+170	Moni Stavrovouniou
+171	Mosfiloti
+172	Xylotymbou
+173	Xylofagou
+174	Odou
+175	Ora
+176	Ormideia
+177	Oroklini
+178	Parsata
+179	Pergamos
+180	Peribolia Larnakas
+181	Petrofani
+182	Prosfygikos Syn. AHK
+183	Prosfygikos Syn. Vattaina
+184	Pila
+185	Pyrga
+186	Skarinou
+187	Softades
+188	Stathmos Kalavasou
+189	Stathmos Skarinou
+190	Stathmos Xoirokitias
+191	Tersefanou
+192	Toxni
+193	Tremetousia
+194	Troulloi
+195	Xoirokitia
+196	Psematismenos
+197	Pseydas
+198	Agglikos Stratos - Akrotiri
+199	Agglikos Stratos - Episkopi
+200	Ayios Athanasios
+201	Ayios Ambrosios (Lemesos)
+202	Ayios Georgios (Lemesos)
+203	Ayios Dimitrios
+204	Ayios Theodoros Agrou
+205	Ayios Therapon
+206	Ayios Thomas
+207	Ayios Ioannis Agrou
+208	Ayios Konstantinos
+209	Ayios Mamas
+210	Ayios Pavlos
+211	Ayios Tyxonas
+212	Agridia
+213	Agros
+214	Athrakos
+215	Akapnou
+216	Akrounta
+217	Akrotiri
+218	Alassa
+219	Alektora
+220	Amathous
+221	Amiantos Kato
+222	Amiantos Pano
+223	Anogyra
+224	Apesia
+225	Arakapas
+226	Armenoxori
+227	Arsos
+228	Asgata
+229	Asomatos
+230	Aydimou
+231	Apsiou
+232	Vasa Kellakiou
+233	Vasa Koilaniou
+234	Vikla
+235	Vouni
+236	Gerasa
+237	Germasogeia
+238	Gerovasa
+239	Dasiko Kollgeio Prodromou
+240	Dierona
+241	Dymes
+242	Dora
+243	Doros
+244	Episkopi
+245	Eptagoneia
+246	Erimi
+247	Zanakia
+248	Zoopigi
+249	Kalo Xorio Lemesou
+250	Kaminaria
+251	Kantou
+252	Kapileio
+253	Kato Polemidia
+254	Kellaki
+255	Kivides
+256	Kivides Kato
+257	Kivides Pano
+258	Kissousa
+259	Klonari
+260	Koilani
+261	Kolossi
+262	Korfi
+263	Kouka
+264	Kyperounta
+265	Laneia
+266	Lemesos
+267	Lemithou
+268	Limnatis
+269	Louvaras
+270	Lofou
+271	Mathikoloni
+272	Malia
+273	Mandria (Lemesos)
+274	Mesa Geitonia
+275	Mesa Potamos
+276	Monagri
+277	Monagrouli
+278	Moni
+279	Moni Ayiou Georgiou Alamanou
+280	Moni Ayiou Nikolaou
+281	Moni Eyaggelistrias
+282	Moni Zoodoxou Pigis
+283	Moni Trooditissis
+284	Moniatis
+285	Monte Korfi
+286	Mouttagiaka
+287	Mylos Kato
+288	Omodos
+289	Palaiomylos
+290	Palodeia
+291	Pano Polemidia
+292	Paramali
+293	Paramitha
+294	Parekklisia
+295	Paxna
+296	Pelendri
+297	Pentakomo
+298	Pera Pedi
+299	Pissouri
+300	Platanistasa
+301	Platies (Metalleia)
+302	Platres
+303	Platres Kato
+304	Platres Pano
+305	Potamiou
+306	Potamitissa
+307	Prastio Aydimou
+308	Prastio Kellakiou
+309	Prodromos
+310	Profitis Ilias
+311	Pyrgos Lemesou
+312	Saittas
+313	Sanatorio Kyperountas
+314	Sanida
+315	Silikou
+316	Souni
+317	Spitali
+318	Stathmos Kalou Xoriou
+319	Stathmos Laneias
+320	Stathmos Mozora
+321	Stathmos Peykou
+322	Stathmos Pissouriou
+323	Stathmos Filagron
+324	Sterakovou
+325	Sykopetra
+326	Symvoulos
+327	Synoikismos Kolossiou
+328	Sxoli Mitsi
+329	Sotira (Lemesou)
+330	Traxoni
+331	Treis Elies
+332	Trikoukkia
+333	Trimiklini
+334	Trozaina
+335	Troodos
+336	Tserkezoi
+337	Ypsonas
+338	Fasoula (Lemesos)
+339	Fasouri
+340	Foini
+341	Foinikaria
+342	Xandria
+343	Ayia Varvara (Pafos)
+344	Ayia Marina Kelokedaron
+345	Ayia Marina Xrysoxous
+346	Ayia Marinouda
+347	Ayios Georgios Kelokedaron
+348	Ayios Georgios Peyeias
+349	Ayios Dimitrianos
+350	Ayios Isidoros
+351	Ayios Ioannis-Salamiou
+352	Ayios Merkourios
+353	Ayios Nikolaos-Salamiou
+354	Akourdaleia
+355	Akourdaleia Kato
+356	Akourdaleia Pano
+357	Akoursos
+358	Amargeti
+359	Ampelitis
+360	Anadiou
+361	Anarita
+362	Andronikou
+363	Aksylou
+364	Argaka
+365	Arminou
+366	Armou
+367	Arodes
+368	Arodes Kato
+369	Arodes Pano
+370	Arximandrita Kato
+371	Arximandrita Pano
+372	Asprogeia
+373	Axeleia
+374	Vretsia
+375	Galataria
+376	Geroskipou
+377	Giala
+378	Gialia Kato
+379	Gialia Pano
+380	Giolou
+381	Goudi
+382	Dasikos Stathmos Ayias
+383	Diasikos Stathmos Stavrou Psokas
+384	Diethnis Aerolimenas Pafou
+385	Drouseia
+386	Drymou
+387	Drynia
+388	Eledio
+389	Empa
+390	Episkopi - Pafos
+391	Eyretou
+392	Zaxaria
+393	Theletra
+394	Ineia
+395	Kathikas
+396	Kallepeia
+397	Kannaviou
+398	Karamoullides
+399	Kedares
+400	Kelokedara
+401	Kidasi
+402	Kio
+403	Kissonerga
+404	Koili
+405	Koilineia
+406	Kolpos Korallion
+407	Koloni
+408	Koinia
+409	Kouklia
+410	Kourdaka
+411	Kritou Marottou
+412	Kritou Tera
+413	Kynousa
+414	Lakki
+415	Lapithiou
+416	Lasa
+417	Lemona
+418	Lempa
+419	Letymvou
+420	Livadi - Pafos
+421	Limni
+422	Loukrounou
+423	Loutra tis Afroditis
+424	Lisos
+425	Maa
+426	Makounta
+427	Malounta - Pafos
+428	Mamountali
+429	Mamonia
+430	Mandria (Pafos)
+431	Marathounta
+432	Maronas
+433	Meladeia
+434	Melamiou
+435	Melandra
+436	Mesa Xorio
+437	Mesana
+438	Mesogi
+439	Milia (Pafos)
+440	Miliou
+441	Moni Ayiou Neofytou
+442	Moni Ayion Anargyron
+443	Moni Xrysorroyiatissas
+444	Mousere
+445	Myrmikofou
+446	Moro Nero
+447	Nata
+448	Nea Dimmata
+449	Neo Xorio Pafou
+450	Nikokleia
+451	Paliampela
+452	Panayia
+453	Panayia Kato
+454	Panayia Pano
+455	Pafos
+456	Peyeia
+457	Pelathousa
+458	Pentaleia
+459	Pera Vasa
+460	Peristerona Xrysoxoous
+461	Pitargou
+462	Pittokopos
+463	Polemi
+464	Poli Xrysoxous
+465	Pomos
+466	Praitori
+467	Prastio Kelokedaron
+468	Prodromi
+469	Salamiou
+470	Sarama
+471	Simou
+472	Skoulli
+473	Souskiou
+474	Statos
+475	Statos - Ayios Fotos
+476	Stavrokonnou
+477	Steni
+478	Stroumpi
+479	Stroumpi Kato
+480	Stroumpi Pano
+481	Tala
+482	Tera
+483	Timi
+484	Traxypedoula
+485	Trimithousa
+486	Trimithousa - Lysos
+487	Tsada
+488	Faleia
+489	Fasli
+490	Fasoula - Pafos
+491	Filousa Kelokedaron
+492	Filousa Xrysoxous
+493	Xrysoxous
+494	Foinikas
+495	Fyti
+496	Xlorakas
+497	Xoletria
+498	Xoli
+499	Xoulou
+500	Xrysoxou
+501	Psathi
+502	Agglikos Stratos (Lefkosia)
+503	Aggolemi
+504	Ayia Varbara
+505	Ayia Eirini Lefkosias
+506	Ayia Kepir
+507	Ayia Marina Xyliatou
+508	Ayia Marina Skillouras
+509	Ayio Georgoudi
+510	Ayioi Iliofotoi
+511	Ayioi Trmithias
+512	Ayios Georgios Kaykalou
+513	Ayios Georgioa Soleas
+514	Ayios Dometios
+515	???ifaneios Oreinis
+516	Ayios Epifaneios Soleas
+517	Ayios Theodoros Soleas
+518	Ayios Theodoros Tillirias
+519	Ayios Ioannis Malountas
+520	Ayios Nikolaos Leykas
+521	Ayios Nikolaos Stegis
+522	Ayios Sozomenos
+523	Ayiya
+524	Aglantzia
+525	Agrokipia
+526	Agroladou
+527	Akaki
+528	Alampra
+529	Aleyka
+530	Alithinou
+531	Alona
+532	Ammadies
+533	Ampelikou
+534	Anayeia
+535	Analiontas
+536	Anthoupoli
+537	Apliki
+538	Argaki
+539	Arediou
+540	Asinou
+541	Askas
+542	Astromeritis
+543	Aylona
+544	Variseia
+545	Vyzakia
+546	Voni
+547	Galata
+548	Galini
+549	Gerakies
+550	Geri
+551	Gerolakkos
+552	Gourri
+553	Dali
+554	Dasikos Stathmos Panayias
+555	Dasikos Stathmos Platanion
+556	Deneia
+557	Deytera
+558	Deytera Kato
+559	Deytera Pano
+560	Dyo Potamoi
+561	Egkomi
+562	ELDYK
+563	Elia Leykosia
+564	Exo Metoxi
+565	Episkopeio
+566	Epixo
+567	Ergates
+568	Eyryxou
+569	Zodeia Kato
+570	Zodeia Pano
+571	Kazibera
+572	Kakopetria
+573	Kaliana
+574	Kalo Xorio Leykas
+575	Kalo Xorio Oreinis
+576	Kalopanayiotis
+577	Kalymvakia
+578	Kampi Farmaka
+579	Kampia
+580	Kampos
+581	Kavli
+582	Kannavia
+583	Kapedes
+584	Kapouras (Dasikos Stathmos)
+585	Kapouti
+586	Karavostasi
+587	Kataliontas
+588	Katydata
+589	Kato Pyrgos Tillirias
+590	Katokopia
+591	Kioneli
+592	Klirou
+593	Kokkina
+594	Kokkinotrimithia
+595	Korakou
+596	Kotsiatis
+597	Kourdali
+598	Kourou Moastiri
+599	Koutrafas
+600	Koutrafas Kato
+601	Koutrafas Pano
+602	Kythrea
+603	Kyra
+604	Lagoudera
+605	Lazanias
+606	Lakatameia
+607	Latsia
+608	Leyka
+609	Lefkosia
+610	Livadia Pitsilias
+611	Limnitis
+612	Linou
+613	Louroukina
+614	Loutros
+615	Lythrodontas
+616	Lympia
+617	Mathiatis
+618	Malounta Lefkosias
+619	Mammari
+620	Mansoura
+621	Margi
+622	Margo
+623	Masari
+624	Meniko
+625	Mia Milia
+626	Mitsero
+627	Moni Ayiou Panteleimonos Axaira
+628	Moni Ayiou Iraklideiou
+629	Moni Arhaggelou Mixail
+630	Moni Kato
+631	Moni Kykkou
+632	Moni Maxaira
+633	Moni Panayias Theotokou
+634	Moni Profiti Ilia
+635	Mora
+636	Morfou
+637	Mosfili
+638	Moutoullas
+639	Mpeikioi
+640	Mylikouri
+641	Neo Libadi
+642	Neo Xorio (Kythreas)
+643	Nisou
+644	Nikitari
+645	Nikitas
+646	Xenovounos
+647	Xeros
+648	Xyliatos
+649	Oikos
+650	Orgontas Stathmos
+651	Orounta
+652	Ortakioi
+653	Palaikythro
+654	Palaiometoxo
+655	Palaixori
+656	Palaixori Morfou
+657	Palaixori Oreinis
+658	Paxyammos
+659	Pedoulas
+660	Pentayeia
+661	Pera
+662	Pera Xorio
+663	Peristerona
+664	Peristeronari
+665	Petra
+666	Petra tou Digeni
+667	Pigenia
+668	Platanistasa
+669	Politiko
+670	Polystypos
+671	Potami
+672	Potamia
+673	Potamos Kampou
+674	Prastio Morfou
+675	Pyrgos
+676	Pyrgos Pano
+677	Pyroi
+678	Saranti
+679	Selemani
+680	Selladi tou Appi
+681	Sia
+682	Sinaoros
+683	Skilloura
+684	Skouriotissa
+685	Soloi
+686	Spilia
+687	Strovolos
+688	Syrianoxori
+689	Temvria
+690	Traxonas
+691	Traxoni (Leykosias)
+692	Tsakistra
+693	Tseri
+694	Tymvou
+695	Farmakas
+696	Fikardou
+697	Filani
+698	Flasou
+699	Flasou Kato
+700	Flasou Pano
+701	Frodisia
+702	Fterikoudi
+703	Fylia
+704	Xalleri
+705	Xamit Mandres
+706	Xrysiliou
+707	Psimolofou
