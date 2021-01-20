@@ -1,0 +1,213 @@
+/*
+*Author: Antonis Louca
+*Program: Multithreaded WebCrawler in java 
+*/
+	Use: Copy and paste the src file in your java Project
+		 Make the console unlimited so all massages can fit to it.
+		 
+		<Usage> : When run the program will ask you for 3 arguments
+			1. 	the root page to start crawling. IF no valid root 
+				page given then the program terminates.
+				
+			2.	The number of depth to be Crawled depth sould at least be 3
+			(inlcuding maxdepth,ex. maxdepth=3 program stops at currentdepth = 4).
+			
+			3.	The number of crawlers which are the threads and 
+				should be a number between 5 and 10 included.IF no  
+				valid number given then the program terminates. 
+
+		The program creates  the given number of threads and starts navigating
+		from the root page to other pages until it reaches the depth asked
+		from the user. Each time a webpage is crawled an appropriate message
+		appears. All the links found from that webpage are added to the todo list
+		and they are going to be crawled when the whole current depth level is 
+		finished. If the next level is not going to be crawled then those pages 
+		will be printed at the end as webpages found but not crawled as
+		max depth reached. Mutual exclusion for the threads is provided by a 
+		monitor. The monitor uses a todo list that opperates as a queue to store 
+        the webpages found, and hashset to keep all the visited webpages in
+		check so we wont add to the todo list the same webpages for crawling.
+		We will see how the monitor works later. Also we have the runnable object
+		WebCrawler which asks the monitor for a webpage, and adds all found links
+		to the todo lists after crawling. When the desired depth is reached 
+		then the Crawler terminates.
+		
+		Monitor and messages printed:
+			The monitor has two main methods and some getters for the current
+			depth and maxdepth and also a method that prints the rest of the 
+			todo list when maxdepth is reached, and a constructor.
+			The two main methods are getlevelLinks and addLinks. According to 
+			their names getlevelLinks we remove the element at the head of the 
+			list that happens when the list is not empty and current depth is
+			the same as the element in the list. If not  when list is 
+			empty the thread waits on full CV and if the depth of the webpage
+			is larger than current depth then thread waits in watinglevel CV.
+			When a link is removed from the todo list then it is also added to 
+			the alreadyCrawled hashset, so it wont be added to the list again.
+			AddLinks method Adds the newly crawled links to the todo list if 
+			they havent already been crawled or contained in the todo list, and 
+			signals all waiting threads on the full CV. By keeping the counter 
+			out we keep track of how many webpages have returned from crawling.
+			We also have two other counters currentlevel and nextlevel, when
+			current level equals out then we have reached the end of the level.
+			And nextlevel counts how many links are in the todo list with depth
+			depthnow+1. When the end of current depth is reached then currentlevel
+			gets the value of nextlevel and all counters are reset. Also we 
+			signal all waitng threads on waiting level CV. Each time add
+			links method is called we signal all threads waitng on full CV.
+			Lastly if nextlevel is zero after current depth finsihed, it means
+			that now other links were found for next depth, so we have to end the
+			program as this can result into a dealock, on full CV. To prevent this 
+			we increase depthNow to the point it is bigger than maxDepth which means 
+			that threads can terminate and return to main normally, as maxDepth 
+			reached.
+			
+			Messages Printed:
+				
+				1) 	System.out.println("To do list is empty so" + Thread.currentThread().getName() + " waits");
+					When todo list is empty and we have to wait to get a link 
+					from the list. Printed in  getlevelLinks().
+					Ex: To do list is empty so Crawler 2 waits
+					
+				2) 	System.out.println(Thread.currentThread().getName()
+						+ " waits for other crawlers to finish and proceed to next level.");
+					This message appears when the first element of the list is 
+					not equal to current deptthnow. this also means that
+					depthnow< depthof first element as it cant be less because
+					all elements less were processed before increasign the depth.
+					Which means that the first element is not of current depth.
+					Printed in  getlevelLinks().
+					Ex: Crawler 9 waits for other crawlers to finish to proceed in next level.
+					
+				3) 	System.out.println(Thread.currentThread().getName() + " exploring " + "Depth =  "
+					+ temp.getDepth() + " Webpage = " + temp.getUri().toString());
+					This message appears when a link is removed from the todo
+					list and given to the thread to be crawled. Printed in  getlevelLinks().
+					EX. Crawler 9 exploring Depth =  3 Webpage = https://sites.google.com/site/mofotoom
+					
+				4) 	System.out.println("Depth " + depthNow + " finished moving to next depth.");
+					Along with: System.out.println("Depth now is: " + this.depthNow);
+					Are two messages that indicate that current depth has
+					finished and threads will start crawling in next depth.
+					Also at this point all threads waiting for the next level
+					are signaled. Printed in  addLinks().
+					Ex: Depth 3 finished moving to next depth.
+						Depth now is: 4
+
+				5) 	System.out.println(Thread.currentThread().getName() + " finished exploring.")
+					Appears when a thread finished exploring given link and will 
+					add all links found in todo list. Printed in  addLinks().
+					Ex. Crawler 5 finished exploring.
+					
+				6)	System.out.println(Thread.currentThread().getName() + " done executing,returning to main.")
+					This message appears when the thread has finished running and 
+					will return to main. Printed in run() method
+					 Crawler 2 done executing, returning to main.
+				
+				7)	System.out.println(Thread.currentThread().getName()+" Connection Error: This site can't be reached.\n");
+					System.out.println(Thread.currentThread().getName()+" Read timed out.");
+					System.out.println(Thread.currentThread().getName()+" There was a problem with this site.");
+					These messages all apprear in crawl() method where a webpage
+					will be crawled for next depth links. First error occurs is 
+					the site cant be reached due to connectionTimeOut when trying
+					to connect to the server to raed the html file.
+					The second is printted due to ConnectionReadTimeOut during 
+					reding the html file.
+					And the third one when a general exception occured.
+					Also if a connection to the site could not be established 
+					then we have :
+					System.out.println("\nSite: " + s.getUri().toString() + " not responding.");
+					when we get a connection code not equal to 200.
+					Examples: 
+						-> Crawler 6 Connection Error: This site can't be reached.
+						-> Site: https://www.cs.ucy.ac.cy/~chryssis/ΕΠΛ236 not responding
+						-> Crawler 7 There was a problem with this site.
+						-> Crawler 7 Read timed out.
+					
+				8) IF the site we try to crawl in is not in the root page then
+					we have the message of :
+					System.out.println("\n"+s.getUri()+" Not in root, so wont be crawled.");
+				   http://home.deib.polimi.it/zoni Not in root, so wont be crawled.
+				   
+				 9)No webpages found for crawling in depth "+depthNow+" program terminates.
+					This message appears when todo list is empty for the next depth
+					this can cause a dealock as all threads can wait for a thread
+					to add a link in todo list and signal them, so they can start
+					crawling the next depth. This cannot happen as no link can be
+					removed from the todo list, as it is empty. Thus we increase 
+					current depth and make it bigger than max depth and print 
+					this message. Thus the program terminates, and no deadloc occurs.
+	
+	Important Notes:
+		=> 	The program opens connection to the html file and reads it, then the connection
+			is closed. And the html is processed as a string. All href wepages are extracted
+			and all spaces are reaplaced with %20 if they exist inside the url.
+	  
+		=> 	If also the url ends with a '/' that is removed as we want to keep only 
+			the webpages without '/' at the and according to instructions.
+			
+		=>	Also the query part of a url is encoded using:
+			URLEncoder.encode(before, "UTF-8"); as instructed.
+			
+		=> 	Also from the university site when .apk links appeared caused the 
+			buffered reader to get stuck for some reason so explicitly when the 
+			program has to crawl an .apk file it returns an empty list, as no
+			other links can occur from an apk file anyway.
+			
+		=> 	In some links there are illegal characters and an exception occures
+			when resolve method is called for the URI if that happens the 
+			eception is caught the url with illegal characters is skipped and
+			the search in the particular webpage continues.
+			
+		=> 	The program was checked in googles root page https://www.google.com/ 
+		    and is running as intentended even on depth 5 and with 10 threads,
+			and at univeristy's cs department website where some times at level 
+			3 a peculiar fenomenon occured that a thread got stuck and all threads
+			at the end of the program were waiting for that thread to proceed
+			to next depth.This happened only in university's website and
+			was solved by adding: 
+			
+			connection.setConnectTimeout(30000);
+			connection.setReadTimeout(30000);
+			
+			instructions that helped limit the time the thread spend reading or 
+			trying to connect to a site that was giving us problems thus now 
+			the program ends as intended in https://www.cs.ucy.ac.cy/ in 
+			depth =3 it will need some time but the program  will finish normaly 
+			when the thread finishes (approx. needs 3.5 mins waiting for final
+			thread to finish) .
+		
+		=>  At the end of the program a catalog is printed like so :
+			<Depth>        		 <ThreadID>			<URL> 
+
+				0			 Crawler 0		https://www.cs.ucy.ac.cy/
+				1			 Crawler 2		https://www.facebook.com/csdeptucy
+				1			 Crawler 4		http://twitter.com/csdeptucy
+				1			 Crawler 3		http://www.linkedin.com/groups/Computer-Science-Department-University-Cyprus-4706857
+				1			 Crawler 5		https://www.cs.ucy.ac.cy/index.php/component/obrss/announcements
+				1			 Crawler 6		https://portal.cs.ucy.ac.cy
+				1			 Crawler 7		https://www.cs.ucy.ac.cy/index.php/component/search
+				1			 Crawler 8		https://www.cs.ucy.ac.cy
+				
+			This represents the depth of each page and what thread took the page
+			to crawl into.
+			
+			For the pages found but they exceed the depth that it's the upper 
+			bound to crawl maxDepth a catalog is printed like so :
+				Pages found but not Crawled as max depth reached.
+				4						https://www.cs.ucy.ac.cy/index.php/el/component/content/?id%253D12%2526amp%253BItemid%253D27
+				4						https://www.cs.ucy.ac.cy/index.php/el/2-uncategorised
+				4						https://www.cs.ucy.ac.cy/index.php/el/10-news
+				4						https://www.cs.ucy.ac.cy/index.php/el/component/content/?id%3D12%26amp%3BItemid%3D27#category-10
+				4						https://www.cs.ucy.ac.cy/index.php/el/14-news/only-students-corner
+				4						https://www.cs.ucy.ac.cy/index.php/el/16-research
+				4						https://www.cs.ucy.ac.cy/index.php/el/component/content/?id%3D12%26amp%3BItemid%3D27#category-16
+				4						https://www.cs.ucy.ac.cy/index.php/el/17-research/research-areas
+				4						https://www.cs.ucy.ac.cy/index.php/el/54-research/projects
+				4						https://www.cs.ucy.ac.cy/index.php/el/component/content/?id%253D20%2526amp%253BItemid%253D55
+				4						https://www.cs.ucy.ac.cy/index.php/el/component/content/?id%3D20%26amp%3BItemid%3D55#category-10
+				4						https://www.cs.ucy.ac.cy/index.php/el/component/content/?id%3D20%26amp%3BItemid%3D55#category-16
+				4						https://www.cs.ucy.ac.cy/index.php/el/people/21-faculty
+
+		For more  info on how each method of the program and especially how the 
+		monitor works look at java docs of the program.
