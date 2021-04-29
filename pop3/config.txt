@@ -1,0 +1,7 @@
+# Mailserver Configuration File
+
+# The number of threads in the threadpool
+THREADS=3
+
+# The port number of the email server (default 110: non secure)
+PORT=110

@@ -1,0 +1,133 @@
+Authors:
+Team NO:1
+Antonis Louca
+Konstantinos Christou
+Marios Papadiomedous
+
+
+This project simulates a multithreaded mail server for the POP3 protocol.
+Only the basic functionalities of the protocol are supported.
+
+These are briefly the commands that the server supports:
+    USER : Authenticate by giving the username.
+    PASS : Authenticate by giving the password.
+    STAT : Request the statistics of the mail box. 
+    LIST : Request a list of the messages in the mail box. 
+    RETR : Retrieve a message from the mail box.
+    DELE : Delete a message from the mail box.
+    CAPA : List of suppeorted commands. 
+    UIDL : Returns unique identifiers for each email,
+    QUIT : Terminate the connection. 
+Given a command other than the ones stated above will yield an error code.
+Each command has its own restrictions and possible error codes.
+Violating a command restriction will yield an error code.
+An indepth description of these restitions can be found in the RFC1939 document:
+            https://tools.ietf.org/html/rfc1939
+
+
+The config.txt can be used to configure the settings of the server.
+
+The AUTHORIZATION State: 
+------------------------
+The state that authenticates the user. 
+In this state only two commands can be used. 
+        (eg. USER/user <username> followed by  PASS/pass <passsword> command)
+The AUTHORIZATION state does not change until the AUTHORIZATION is established
+which happens when both user and pass commands are given.
+
+The TRANSACTION State: 
+----------------------
+Once the client has successfully established a connection the client can execute
+the following commands
+    1)STAT: Request the statistics of the mail box. 
+        STAT command takes no arguments and can be performed only in the 
+        TRANSACTION state.
+        This command returns +OK response along with the number of messages in
+        mailbox, followed by the total size of it. All messages that are marked as 
+        deleted are not counted.
+
+        Possible Responses:
+             +OK nn mm
+
+         Examples:
+             C: STAT
+             S: +OK 2 320
+
+    2)LIST: Request a list of the messages in the mail box. 
+        LIST command takes an optional message-number, as an argument.
+        It may only be given in the TRANSACTION state.
+        All messages that are marked as deleted are not counted.
+        If an argument was given the server returns +OK with a line containing
+        the message number specified by the given argument, followed by the 
+        total size of that message in octets.
+        If no argument was given the server returns +OK along with the 
+        total number of messages in the maildrop and the total size of the 
+        maildrop, followed by multiple lines containing information for 
+        each individual message in the maildrop. 
+        Each line contains the message name followed by its size in octets.
+
+        Possible Responses:
+            +OK 
+            -ERR
+        
+        Examples:
+            C: LIST
+            S: +OK 2 messages (320 octets)
+            S: 1 120
+            S: 2 200
+            S: .
+              ...
+            C: LIST 2
+            S: +OK 2 200
+              ...
+            C: LIST 3
+            S: -ERR no such message, only 2 messages in maildrop
+
+    3)RETR: Retrieve a message from the mail box.
+            In order for the Retrieve command to work, 
+            the state of the session must be to the transaction state.
+            The command must be followed by a number referring 
+            to the message id(e,g RETR 1 CRLF, retrieve message with id 1).
+            If message exists the server will reply by sending “+OK X octets CRLF” where X 
+            is the filesize followed by the message itself. Each line will be ending using CRLF.
+            When ”.CRLF” is received then the full message has been send. It is important to mention 
+            that if a line of message contains the “.” Symbol then another dot is added.
+
+    4)DELE: Delete a message from the mail box.
+            The delete command takes as arguments a number representing the name 
+            of the message which is mandatory.
+            The command marks a message as deleted, but does not delete the message
+            until the update state is reached. If the message does not 
+            exist, or was deleted by a previous command, then an error message 
+            is returned. 
+
+            Possible Responses:
+             +OK message deleted
+             -ERR no such message
+
+             Examples:
+             C: DELE 1
+             S: +OK message 1 deleted
+                ...
+             C: DELE 2
+             S: -ERR message 2 already deleted
+
+THE UPDATE STATE:
+-----------------
+
+    5)QUIT: Terminate the connection. 
+            The quit command is accessible from both authentication and transaction state. 
+            When given(e.g “QUIT CRLF), the session changes to the UPDATE state where 
+            all the changes happened during the session will be saved. Server will respond 
+            using “+OK POP3 server signing off (mailbox empty)CRLF” if no changes were made,  “+OK X POP3 
+            server signing off (Y messages left)”.X is the session username and Y is the messages left on mailbox. 
+            In the case of any error occur, server will respond using the “-ERR some deleted messages not removed CRLF” message.
+
+    			NOTE: CAPA and QUIT commands can be used at any state of the session.
+	 			All Rights Reserved © 2021
+	
+	
+	
+	 
+	 
+	 
