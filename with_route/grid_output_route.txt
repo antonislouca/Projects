@@ -1,0 +1,337 @@
+Training Radnom forest Regression...
+
+-----------------Results from Grid Search-----------------
+
+ The best estimator across ALL searched params:
+ RandomForestRegressor(max_features=None, min_samples_split=8, n_estimators=1000)
+
+ The best score across ALL searched params:
+ 0.8717203711248602
+
+ The best parameters across ALL searched params:
+ {'bootstrap': True, 'max_depth': None, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 8, 'n_estimators': 1000}
+
+Training Linear Regression...
+
+-----------------Results from Grid Search-----------------
+
+ The best estimator across ALL searched params:
+ LinearRegression(fit_intercept=False)
+
+ The best score across ALL searched params:
+ 0.7022335416403943
+
+ The best parameters across ALL searched params:
+ {'copy_X': True, 'fit_intercept': False}
+
+Training Lasso Regression...
+[1.00000000e-08 6.72335754e-08 4.52035366e-07 3.03919538e-06
+ 2.04335972e-05 1.37382380e-04 9.23670857e-04 6.21016942e-03
+ 4.17531894e-02 2.80721620e-01 1.88739182e+00 1.26896100e+01
+ 8.53167852e+01 5.73615251e+02 3.85662042e+03 2.59294380e+04
+ 1.74332882e+05 1.17210230e+06 7.88046282e+06 5.29831691e+07
+ 3.56224789e+08 2.39502662e+09 1.61026203e+10 1.08263673e+11
+ 7.27895384e+11 4.89390092e+12 3.29034456e+13 2.21221629e+14
+ 1.48735211e+15 1.00000000e+16]
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13962923927.975517, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13965501226.861639, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13965167573.832008, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13598110840.858238, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13403386748.775354, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13594454426.620329, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13877569140.21856, tolerance: 9713407.82804813      
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13829349430.421051, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13731609886.323847, tolerance: 9737453.453593897    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13857623780.305101, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13569848925.229324, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13648105260.992605, tolerance: 9737453.453593897    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13853957383.24199, tolerance: 9741580.065185081     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13875946323.755182, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13865032233.190844, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13743995259.528273, tolerance: 9737453.453593897    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13947822022.110075, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13845508912.816578, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13665803991.307703, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13120812003.286636, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13076002112.153774, tolerance: 9737453.453593897    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 12646951271.930264, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 12313924045.985823, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13290318453.329638, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 7096136016.34887, tolerance: 9726761.516274616      
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 9883338100.065876, tolerance: 9737453.453593897     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13791502900.132376, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 8227045026.89392, tolerance: 9741580.065185081      
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 8682536827.947609, tolerance: 9833078.600055007     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 2244044933.655176, tolerance: 9737453.453593897     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 939283014.7463837, tolerance: 9726761.516274616     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 10466492197.20177, tolerance: 9713407.82804813      
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 2273948019.3274918, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 36151002.21232605, tolerance: 9726761.516274616     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 833010677.4781494, tolerance: 9833078.600055007     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 805442251.6386299, tolerance: 9737453.453593897     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 798128424.4165077, tolerance: 9737453.453593897     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 2803520915.5255833, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 170108261.5576706, tolerance: 9713407.82804813      
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13965530627.374569, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13965558882.899813, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13965555224.512148, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13598713003.404612, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13858259564.072674, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13858231020.777517, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13877838827.483147, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13746063848.986414, tolerance: 9737453.453593897    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13598503476.786882, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13598744166.799736, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13858039113.728796, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13597094552.883644, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13877759602.31816, tolerance: 9713407.82804813      
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13877850611.006824, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13746144289.166252, tolerance: 9737453.453593897    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13745522961.648455, tolerance: 9737453.453593897    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13965365229.926142, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13856748841.820961, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13964252203.479864, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13741883702.39932, tolerance: 9737453.453593897     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13956723389.215126, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13877226928.657661, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13523476263.113026, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13587613204.887453, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13789767814.679546, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13848077118.143513, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13073919044.048574, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13873644915.343872, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13717293896.055546, tolerance: 9737453.453593897    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13903945456.300413, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13849531991.296923, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13546271636.765804, tolerance: 9737453.453593897    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13397637009.159979, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13287698154.104984, tolerance: 9833078.600055007    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 12065135141.20335, tolerance: 9737453.453593897     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 13686253237.684542, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 10818070442.78355, tolerance: 9741580.065185081     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 8675669868.190786, tolerance: 9726761.516274616     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 2681779008.405941, tolerance: 9833078.600055007     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 3837303135.6158314, tolerance: 9726761.516274616    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 2070280000.8936615, tolerance: 9741580.065185081    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 12502395752.592514, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 2184341885.3450146, tolerance: 9737453.453593897    
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 1635919721.9467087, tolerance: 9713407.82804813     
+  model = cd_fast.enet_coordinate_descent(
+C:\Users\santoryu\anaconda3\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:530: ConvergenceWarning: Objective did not converge. You might want to increase the 
+number of iterations. Duality gap: 2192372268.9795895, tolerance: 9737453.453593897    
+  model = cd_fast.enet_coordinate_descent(
+
+----------------Results from Grid Search for normalize=  False  ----------------
+
+ The best estimator across ALL searched params:
+ Lasso(alpha=0.2807216203941176)
+
+ The best score across ALL searched params:
+ 0.7094968338999695
+
+ The best parameters across ALL searched params:
+ {'alpha': 0.2807216203941176}
+
+Training Decission Tree Regression...
+
+-----------------Results from Grid Search-----------------
+
+ The best estimator across ALL searched params:
+ DecisionTreeRegressor(min_samples_split=20)
+
+ The best score across ALL searched params:
+ 0.8261524396587767
+
+ The best parameters across ALL searched params:
+ {'criterion': 'mse', 'max_depth': None, 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 20}
+
+Training Polynomial Regression...
+
+----------Results from Grid Search for degree=  2 -------
+
+ The best estimator across ALL searched params:
+ LinearRegression(fit_intercept=False)
+
+ The best score across ALL searched params:
+ -118.48776383097463
+
+ The best parameters across ALL searched params:
+ {'copy_X': True, 'fit_intercept': False}
+joblib.externals.loky.process_executor._RemoteTraceback: 
+
+Training GBR Regression...
+
+ The best estimator across ALL searched params:
+ GradientBoostingRegressor(learning_rate=0.3, max_depth=7, min_samples_split=30,
+                          n_estimators=200, random_state=0)
+
+ The best score across ALL searched params:
+ 0.8774318700676857
+
+ The best parameters across ALL searched params:
+ {'alpha': 0.9, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.3, 'max_depth': 7, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 30, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 200, 'random_state': 0, 'subsample': 1.0, 'warm_start': False}
