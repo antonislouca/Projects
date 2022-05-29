@@ -1,0 +1,286 @@
++r /mnt/c/Users/santoryu/Desktop/Epl451hw2/src/hw2/src/tail-call.out
+[Detaching after fork from child process 1715]
+
+Program received signal SIGTSTP, Stopped (user).
+0x00007ffff7ce0e8e in __GI___libc_read (fd=0, buf=0x555555575be0, nbytes=1024) at ../sysdeps/unix/sysv/linux/read.c:26
+26	../sysdeps/unix/sysv/linux/read.c: No such file or directory.
++b mian
+Function "mian" not defined.
++b main
+Breakpoint 1 at 0x55555555abb3: file mdb.cpp, line 8.
++b begin_debuging(debugger*, char**) 
+Breakpoint 2 at 0x55555555657f: file assisting_functions.cpp, line 15.
++b enable_bp() 
+Breakpoint 3 at 0x555555556dbe: file breakpoint.cpp, line 32.
++fg
+Continuing.
+
+Program received signal SIGTSTP, Stopped (user).
+0x00007ffff7ce0e8e in __GI___libc_read (fd=0, buf=0x555555575be0, nbytes=1024) at ../sysdeps/unix/sysv/linux/read.c:26
+26	in ../sysdeps/unix/sysv/linux/read.c
++b *0x4427
+Breakpoint 4 at 0x4427
++fg
+Continuing.
+Warning:
+Cannot insert breakpoint 4.
+Cannot access memory at address 0x4427
+
+Command aborted.
++r
+Starting program: /mnt/c/Users/santoryu/Desktop/Epl451hw2/src/hw2/src/mdb.out /mnt/c/Users/santoryu/Desktop/Epl451hw2/src/hw2/src/tail-call.out
+Warning:
+Cannot insert breakpoint 4.
+Cannot access memory at address 0x4427
+
++c
+Continuing.
+Warning:
+Cannot insert breakpoint 4.
+Cannot access memory at address 0x4427
+
+Command aborted.
++c
+Continuing.
+Warning:
+Cannot insert breakpoint 4.
+Cannot access memory at address 0x4427
+
+Command aborted.
++d 0x4427
+warning: bad breakpoint number at or near '0'
++d 4
++info breakpoints
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x000055555555abb3 in main(int, char**) at mdb.cpp:8
+2       breakpoint     keep y   0x000055555555657f in begin_debuging(debugger*, char**) at assisting_functions.cpp:15
+3       breakpoint     keep y   0x0000555555556dbe in breakpoint::enable_bp() at breakpoint.cpp:32
++r
+Starting program: /mnt/c/Users/santoryu/Desktop/Epl451hw2/src/hw2/src/mdb.out /mnt/c/Users/santoryu/Desktop/Epl451hw2/src/hw2/src/tail-call.out
+
+Breakpoint 1, main (argc=2, argv=0x7fffffffddb8) at mdb.cpp:8
+8	    if (argc <= 1)
++c
+Continuing.
+
+Breakpoint 2, begin_debuging (mdb=0x555555572eb0, argv=0x7fffffffddb8) at assisting_functions.cpp:15
+15	    const char *prompt = ">>> ";
++n
+16	    char *input_buf = new char[maxbuf];
++n
+17	    Usage();
++n
+19	    mdb->start_tracing(argv); // set up ptrace and create tracee process
++n
+[Detaching after fork from child process 2656]
+20	    std::cerr << "Debugging process initialized: debugee PID= "
++n
+21	              << mdb->get_tracee_pid()
++n
+22	              << std::endl;
++n
+23	    std::string input;
++n
+27	        if (write(STDERR_FILENO, prompt, 4) < 0)
++n
+34	        if (read(STDIN_FILENO, input_buf, maxbuf) < 0)
++n
+43	        input.assign(input_buf);
++n
+51	            << "Input lenght: "
++n
+52	            << input.length()
++n
+53	            << std::endl;
++n
+55	        if (strncmp(input.c_str(), "b ", 2) == 0)
++n
+58	            if (strncmp(input.c_str(), "b *0x", 5) == 0)
++n
+63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+0x0000555555556766	63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+0x0000555555556769	63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+0x0000555555556772	63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+0x0000555555556776	63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+0x000055555555677a	63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+0x000055555555677d	63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+0x0000555555556782	63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+0x0000555555556785	63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+62	                std::intptr_t address = std::stol(
++ni
+0x000055555555678e	62	                std::intptr_t address = std::stol(
++ni
+0x0000555555556793	62	                std::intptr_t address = std::stol(
++ni
+0x0000555555556798	62	                std::intptr_t address = std::stol(
++ni
+0x000055555555679b	62	                std::intptr_t address = std::stol(
++ni
+0x00005555555567a0	62	                std::intptr_t address = std::stol(
++ni
+63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+0x00005555555567a8	63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+0x00005555555567ab	63	                    input.substr(5, input.length() - 1), 0, 16);
++ni
+65	                std::cerr << "address: " << std::hex << address << std::endl;
++ni
+0x00005555555567b7	65	                std::cerr << "address: " << std::hex << address << std::endl;
++ni
+0x00005555555567be	65	                std::cerr << "address: " << std::hex << address << std::endl;
++ni
+0x00005555555567c3	65	                std::cerr << "address: " << std::hex << address << std::endl;
++ni
+0x00005555555567ca	65	                std::cerr << "address: " << std::hex << address << std::endl;
++ni
+0x00005555555567cd	65	                std::cerr << "address: " << std::hex << address << std::endl;
++ni
+0x00005555555567d2	65	                std::cerr << "address: " << std::hex << address << std::endl;
++ni
+0x00005555555567d5	65	                std::cerr << "address: " << std::hex << address << std::endl;
++ni
+0x00005555555567d9	65	                std::cerr << "address: " << std::hex << address << std::endl;
++ni
+0x00005555555567dc	65	                std::cerr << "address: " << std::hex << address << std::endl;
++ni
+0x00005555555567df	65	                std::cerr << "address: " << std::hex << address << std::endl;
++n
+66	                mdb->set_breakpoint(address, mdb->get_tracee_pid());
++ni
+0x00005555555567fd	66	                mdb->set_breakpoint(address, mdb->get_tracee_pid());
++si
+0x0000555555556800	66	                mdb->set_breakpoint(address, mdb->get_tracee_pid());
++si
+debugger::get_tracee_pid (this=0x7ffff7ef4b7f <std::ostream::flush()+31>) at debugger.cpp:63
+63	{
++si
+0x0000555555557241	63	{
++si
+0x0000555555557244	63	{
++si
+64	    return this->tracee_pid;
++si
+0x000055555555724c	64	    return this->tracee_pid;
++si
+65	}
++si
+0x0000555555557250	65	}
++si
+0x0000555555556805 in begin_debuging (mdb=0x555555572eb0, argv=0x7fffffffddb8) at assisting_functions.cpp:66
+66	                mdb->set_breakpoint(address, mdb->get_tracee_pid());
++si
+0x0000555555556807	66	                mdb->set_breakpoint(address, mdb->get_tracee_pid());
++si
+0x000055555555680b	66	                mdb->set_breakpoint(address, mdb->get_tracee_pid());
++si
+0x000055555555680f	66	                mdb->set_breakpoint(address, mdb->get_tracee_pid());
++si
+0x0000555555556812	66	                mdb->set_breakpoint(address, mdb->get_tracee_pid());
++si
+0x0000555555556815	66	                mdb->set_breakpoint(address, mdb->get_tracee_pid());
++si
+debugger::set_breakpoint (this=0x7ffff7ef550a <std::ostream::put(char)+74>, breakpoint_address=140737488346032, pid=0) at debugger.cpp:131
+131	{
++si
+0x00005555555575b3	131	{
++si
+0x00005555555575b6	131	{
++si
+0x00005555555575b8	131	{
++si
+0x00005555555575b9	131	{
++si
+0x00005555555575bd	131	{
++si
+0x00005555555575c1	131	{
++si
+0x00005555555575c5	131	{
++si
+137	    breakpoint *bp = new breakpoint(breakpoint_address, true, pid);
++si
+0x00005555555575cd	137	    breakpoint *bp = new breakpoint(breakpoint_address, true, pid);
++si
+0x0000555555556210 in operator new(unsigned long)@plt ()
++si
+0x00007ffff7e770a0 in operator new(unsigned long) () from /lib/x86_64-linux-gnu/libstdc++.so.6
++si
+0x00007ffff7e770a1 in operator new(unsigned long) () from /lib/x86_64-linux-gnu/libstdc++.so.6
++si
+0x00007ffff7e770a4 in operator new(unsigned long) () from /lib/x86_64-linux-gnu/libstdc++.so.6
++si
+0x00007ffff7e770a9 in operator new(unsigned long) () from /lib/x86_64-linux-gnu/libstdc++.so.6
++si
+0x00007ffff7e770ad in operator new(unsigned long) () from /lib/x86_64-linux-gnu/libstdc++.so.6
++n
+Single stepping until exit from function _Znwm,
+which has no line number information.
+debugger::set_breakpoint (this=0x555555572eb0, breakpoint_address=17447, pid=2656) at debugger.cpp:138
+138	    if (bp->enable_bp())
++si
+0x00005555555575f6	138	    if (bp->enable_bp())
++si
+0x00005555555575f9	138	    if (bp->enable_bp())
++si
+breakpoint::enable_bp (this=0x7f0100000a60) at breakpoint.cpp:29
+29	{
++si
+0x0000555555556db3	29	{
++si
+0x0000555555556db6	29	{
++si
+0x0000555555556dba	29	{
++si
+
+Breakpoint 3, breakpoint::enable_bp (this=0x555555575ff0) at breakpoint.cpp:32
+32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++si
+0x0000555555556dc2	32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++si
+32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++si
+0x0000555555556dc8	32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++si
+0x0000555555556dcc	32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++si
+0x0000555555556dcf	32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++si
+0x0000555555556dd4	32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++si
+0x0000555555556dd6	32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++si
+0x0000555555556ddb	32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++si
+0x0000555555556de0	32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++si
+0x00005555555561d0 in ptrace@plt ()
++n
+Single stepping until exit from function ptrace@plt,
+which has no line number information.
+ptrace (request=PTRACE_PEEKDATA) at ../sysdeps/unix/sysv/linux/ptrace.c:30
+30	../sysdeps/unix/sysv/linux/ptrace.c: No such file or directory.
++n
+36	in ../sysdeps/unix/sysv/linux/ptrace.c
++n
+45	in ../sysdeps/unix/sysv/linux/ptrace.c
++n
+46	in ../sysdeps/unix/sysv/linux/ptrace.c
++n
+breakpoint::enable_bp (this=0x555555575ff0) at breakpoint.cpp:32
+32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++ni
+0x0000555555556de9	32	    old_code = ptrace(PTRACE_PEEKDATA, pid, (void *)address, 0);
++ni
+33	    if (old_code == -1)
++q
