@@ -36,7 +36,9 @@ for i, pl in enumerate(playlists):
 
             filedest = f'{result_dir}/{directories[i]}/{yt.title}.mp4'
 
-            stream.download(filename=filedest)
+            # download only when the file is not in dir
+            if not os.path.exists(filedest):
+                stream.download(filename=filedest)
         except:
             print(f"Skipping age-restricted video: {video_url}")
             continue
